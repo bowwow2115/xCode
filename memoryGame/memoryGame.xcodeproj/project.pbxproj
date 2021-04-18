@@ -63,8 +63,8 @@
 		610BE5D7262AA1E4004C2452 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				610BE5D8262AA1E4004C2452 /* memoryGameApp.swift */,
 				610BE5D9262AA1E4004C2452 /* ContentView.swift */,
+				610BE5D8262AA1E4004C2452 /* memoryGameApp.swift */,
 				610BE602262AA634004C2452 /* EmojiMemoryGame.swift */,
 				610BE5FD262AA45E004C2452 /* MemoryGame.swift */,
 				610BE5DA262AA1E6004C2452 /* Assets.xcassets */,

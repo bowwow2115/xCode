@@ -19,15 +19,16 @@ class EmojiMemoryGame{
     // MARK: - Access to the Model
     
     var cards: Array<MemoryGame<String>.Card>{
-        model.cards
+        return model.cards
     }
+    
+    
     
     // MARK: - Intent(s)
     
     func choose(card: MemoryGame<String>.Card) {
         model.choose(card: card)
     }
-    
     
    
 }
