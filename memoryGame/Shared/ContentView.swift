@@ -18,21 +18,26 @@ struct ContentView: View {
       
       
             GeometryReader { geometry in
-                HStack {
-            ForEach((viewModel.cards).shuffled()){
+                HStack(spacing:0) {
+            ForEach(viewModel.cards){
                 card in CardView(card: card)
-                .frame(width: geometry.size.width/CGFloat((viewModel.cards.count)), height: geometry.size.width/CGFloat((viewModel.cards.count))*3/2)
+                    .padding(.all, geometry.size.width/CGFloat((viewModel.cards.count)*10))
+                .frame(width: geometry.size.width/CGFloat((viewModel.cards.count)), height: geometry.size.width/CGFloat((viewModel.cards.count))*3/2,
+                       alignment: .center)
                 .onTapGesture {
                 viewModel.choose(card: card)
                 }
             }
+          
+                    
             }
-        
+            
+                .foregroundColor(Color.orange)
+                .font(viewModel.cards.count > 3 ? Font.subheadline : Font.largeTitle)
+                
+              
         }
-        .padding()
-        .foregroundColor(Color.orange)
-        .font(Font.largeTitle)
-      
+       
         
     }
 }
