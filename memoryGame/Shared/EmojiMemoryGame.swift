@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-class EmojiMemoryGame{
+class EmojiMemoryGame: ObservableObject { //
     
-    private var model: MemoryGame<String> = createMemoryGame()
+    @Published private var model: MemoryGame<String> = createMemoryGame() //값이 변경될 때마다 objectWillSend 를 통해 값을 보냄
     
     static func createMemoryGame() -> MemoryGame<String> { //초기화 되기 전에는 function을 사용할 수 없어서 static을 사용
         func randomCard() -> Array<String>{
@@ -44,10 +44,16 @@ class EmojiMemoryGame{
         return MemoryGame<String>(numberOfPairsOfCards: emojis.count) { pairIndex in  emojis[pairIndex] }
     }
     
+    
+   
+    init(){
+        self.model.cards = self.model.cards.shuffled()//초기화 할 때 한번만 작동한다.
+    }
+    
     // MARK: - Access to the Model
     
     var cards: Array<MemoryGame<String>.Card>{
-        model.cards.shuffled()
+        model.cards
     }
     
     
@@ -55,6 +61,7 @@ class EmojiMemoryGame{
     // MARK: - Intent(s)
     
     func choose(card: MemoryGame<String>.Card) {
+    
         model.choose(card: card)
     }
     
