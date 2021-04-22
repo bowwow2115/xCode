@@ -14,7 +14,7 @@ struct EmojiMomoryGameView: View {
     var body: some View {
         GeometryReader { geometry in
             HStack(spacing: 0) {
-                ForEach(viewModel.cards) {
+                Grid(viewModel.cards) {
                     card in CardView(card: card)
                         .padding(.all, geometry.size.width / CGFloat((viewModel.cards.count) * 10))
                         .frame(width: geometry.size.width / CGFloat((viewModel.cards.count)), height: geometry.size.width / CGFloat((viewModel.cards.count)) * 3 / 2,
