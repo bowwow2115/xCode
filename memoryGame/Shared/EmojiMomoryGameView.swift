@@ -16,9 +16,7 @@ struct EmojiMomoryGameView: View {
             HStack(spacing: 0) {
                 Grid(viewModel.cards) {
                     card in CardView(card: card)
-                        .padding(.all, geometry.size.width / CGFloat((viewModel.cards.count) * 10))
-                        .frame(width: geometry.size.width / CGFloat((viewModel.cards.count)), height: geometry.size.width / CGFloat((viewModel.cards.count)) * 3 / 2,
-                               alignment: .center)
+
                         .onTapGesture {
                         viewModel.choose(card: card)
                     }
@@ -55,16 +53,20 @@ struct CardView: View {
                     RoundedRectangle(cornerRadius: cornerRadius).fill()
                 }
             }
-            .font(Font.system(size: fontSize(for: geometry.size)))
+                .font(Font.system(size: fontSize(for: geometry.size)))
+
         }
+        // MARK: - Drawing Constants
+
+        
     }
-    // MARK: - Drawung Constants
-    
-    let cornerRadius:CGFloat = 10.0
+    let cornerRadius: CGFloat = 10.0
     let edgeLineWidth: CGFloat = 3
     let fontScaleFactor: CGFloat = 0.75
-    
+
+  
     func fontSize(for size: CGSize) -> CGFloat {
         min(size.width, size.height) * fontScaleFactor
     }
+
 }

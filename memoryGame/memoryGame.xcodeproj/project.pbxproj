@@ -19,6 +19,10 @@
 		610BE604262AA634004C2452 /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610BE602262AA634004C2452 /* EmojiMemoryGame.swift */; };
 		6171705826307619001FE031 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6171705726307619001FE031 /* Grid.swift */; };
 		6171705926307619001FE031 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6171705726307619001FE031 /* Grid.swift */; };
+		6171705F26319F94001FE031 /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6171705E26319F94001FE031 /* GridLayout.swift */; };
+		6171706026319F94001FE031 /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6171705E26319F94001FE031 /* GridLayout.swift */; };
+		6195BE682633E81500B4BB77 /* Attay +  Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6195BE672633E81500B4BB77 /* Attay +  Identifiable.swift */; };
+		6195BE692633E81500B4BB77 /* Attay +  Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6195BE672633E81500B4BB77 /* Attay +  Identifiable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,8 @@
 		610BE5FD262AA45E004C2452 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
 		610BE602262AA634004C2452 /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
 		6171705726307619001FE031 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		6171705E26319F94001FE031 /* GridLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GridLayout.swift; path = ../../../../Downloads/GridLayout.swift; sourceTree = "<group>"; };
+		6195BE672633E81500B4BB77 /* Attay +  Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Attay +  Identifiable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,8 @@
 				610BE5D8262AA1E4004C2452 /* memoryGameApp.swift */,
 				610BE5D9262AA1E4004C2452 /* EmojiMomoryGameView.swift */,
 				6171705726307619001FE031 /* Grid.swift */,
+				6195BE672633E81500B4BB77 /* Attay +  Identifiable.swift */,
+				6171705E26319F94001FE031 /* GridLayout.swift */,
 				610BE602262AA634004C2452 /* EmojiMemoryGame.swift */,
 				610BE5FD262AA45E004C2452 /* MemoryGame.swift */,
 				610BE5DA262AA1E6004C2452 /* Assets.xcassets */,
@@ -202,8 +210,10 @@
 				610BE5FE262AA45E004C2452 /* MemoryGame.swift in Sources */,
 				610BE5ED262AA1E6004C2452 /* EmojiMomoryGameView.swift in Sources */,
 				610BE5EB262AA1E6004C2452 /* memoryGameApp.swift in Sources */,
+				6171705F26319F94001FE031 /* GridLayout.swift in Sources */,
 				6171705826307619001FE031 /* Grid.swift in Sources */,
 				610BE603262AA634004C2452 /* EmojiMemoryGame.swift in Sources */,
+				6195BE682633E81500B4BB77 /* Attay +  Identifiable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,8 +224,10 @@
 				610BE5FF262AA45E004C2452 /* MemoryGame.swift in Sources */,
 				610BE5EE262AA1E6004C2452 /* EmojiMomoryGameView.swift in Sources */,
 				610BE5EC262AA1E6004C2452 /* memoryGameApp.swift in Sources */,
+				6171706026319F94001FE031 /* GridLayout.swift in Sources */,
 				6171705926307619001FE031 /* Grid.swift in Sources */,
 				610BE604262AA634004C2452 /* EmojiMemoryGame.swift in Sources */,
+				6195BE692633E81500B4BB77 /* Attay +  Identifiable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

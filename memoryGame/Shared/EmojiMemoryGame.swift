@@ -51,7 +51,7 @@ class EmojiMemoryGame: ObservableObject { //
     }
     
     // MARK: - Access to the Model
-    
+    //프라이빗 접근자를 통해 보호
     var cards: Array<MemoryGame<String>.Card>{
         model.cards
     }
