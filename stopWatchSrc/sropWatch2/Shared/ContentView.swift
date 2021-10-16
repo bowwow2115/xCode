@@ -148,7 +148,7 @@ struct Home : View{
         return a
     }
     
-x     UserDefaults.standard.setValue(Date(), forkey: "senceDidEnterBackGround")
+     UserDefaults.standard.setValue(Date(), forkey: "senceDidEnterBackGround")
     
 }
 

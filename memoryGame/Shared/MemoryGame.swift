@@ -29,6 +29,7 @@ struct MemoryGame<CardContent> {
             cards.append(Card(content: content, id: pairIndex * 2 + 1))
         }
     }
+    
     struct Card: Identifiable { //Identifiable은 id를 필요로 하는 프로토콜을 가지고 있음,view에서 forEach를 사용할 때 각 카드가 구별되어야 하기 때문에 걸어줌
         var isFaceUp: Bool = true
         var isMatched: Bool = false

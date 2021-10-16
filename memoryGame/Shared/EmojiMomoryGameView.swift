@@ -3,7 +3,7 @@
 //  Shared
 //
 //  Created by 박승훈 on 2021/04/17.
-//View
+//View 
 
 import SwiftUI
 
@@ -16,7 +16,7 @@ struct EmojiMomoryGameView: View {
             HStack(spacing: 0) {
                 Grid(viewModel.cards) {
                     card in CardView(card: card)
-
+                        .aspectRatio(2/3, contentMode: .fit)
                         .onTapGesture {
                         viewModel.choose(card: card)
                     }
