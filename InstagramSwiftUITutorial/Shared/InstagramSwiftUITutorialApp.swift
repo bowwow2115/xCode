@@ -17,6 +17,7 @@ struct InstagramSwiftUITutorialApp: App {
   
     var body: some Scene {
         WindowGroup {
+//          MARK: initialized
           ContentView().environmentObject(AuthViewModel.shared)
         }
     }

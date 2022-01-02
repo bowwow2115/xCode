@@ -29,10 +29,10 @@ struct Clock: View {
 struct ProgressTrack: View {
     var body: some View {
         Circle()
-            .fill(Color.clear)
+            .fill(Color.red)
             .frame(width: 250, height: 250)
             .overlay(
-                Circle().stroke(Color.black, lineWidth: 15)
+                Circle().stroke(Color.blue, lineWidth: 15)
         )
     }
 }

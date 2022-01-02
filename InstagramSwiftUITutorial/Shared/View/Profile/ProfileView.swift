@@ -8,18 +8,21 @@
 import SwiftUI
 
 struct ProfileView: View {
+  let user: User
+  @ObservedObject var viewModel: ProfileViewModel
+  
+  //값을 initialize 하지 않고 전달받은 값을 전달해 주고 싶을 때 사용
+  init(user: User){
+    self.user = user
+    self.viewModel = ProfileViewModel(user: user)
+  }
     var body: some View {
         
       VStack{
-        ProfileHeaderView()
+        ProfileHeaderView(viewModel: viewModel)
           
         PostGridView()
       }.padding(.top)
     }
 }
 
-struct ProfileView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProfileView()
-    }
-}

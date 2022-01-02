@@ -6,15 +6,19 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ProfileHeaderView: View {
+  @ObservedObject var viewModel: ProfileViewModel
+  
+  
     var body: some View {
       GeometryReader { geometry in
         let width = geometry.size.width
       VStack(alignment: .leading){
         
         HStack{
-          Image("sasaki")
+          KFImage(URL(string: viewModel.user.profileImageUrl))
             .resizable()
             .scaledToFill()
             .frame(width: width/5, height: 80)
@@ -33,7 +37,7 @@ struct ProfileHeaderView: View {
         }
         .frame(width: width)
         
-          Text("Sasaki Aki")
+        Text(viewModel.user.fullname)
             .font(.system(size: 15, weight: .semibold))
           .padding([.leading,.top])
           Text("AV Actress")
@@ -43,7 +47,7 @@ struct ProfileHeaderView: View {
           
         HStack {
           
-          ProfileActionButtonView()
+          ProfileActionButtonView(viewModel: viewModel)
           
         }
         .frame(width: width)
@@ -54,9 +58,9 @@ struct ProfileHeaderView: View {
     }
 }
 
-
-struct ProfileHeaderView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProfileHeaderView()
-    }
-}
+//
+//struct ProfileHeaderView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ProfileHeaderView()
+//    }
+//}
